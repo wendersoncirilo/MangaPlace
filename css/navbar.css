@@ -1,0 +1,110 @@
+.navbar{
+  padding: 10px 30px;
+  background: linear-gradient(90deg, rgba(234,55,74,1) 0%, rgba(244,93,68,1) 100%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.navbar .brand-container .brand-text{
+  padding: 0px 20px;  
+  color: var(--body-color);
+  font-family: var(--brand-font);
+  font-size: var(--h2-font-size);  
+  white-space: nowrap;
+}
+
+.navbar .brand-container img{
+  max-width: 50px;  
+}
+
+.navbar .mobi-menu {
+  display: none;
+}
+
+.navbar .nav-menu {
+  display:  flex;
+  flex-direction: row;
+  flex-wrap: nowrap;  
+}
+
+.navbar .nav-link {   
+  margin: 0px 5px;
+  color: var(--text-color-default);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+} 
+
+.navbar .nav-cart {
+  padding: 0px 10px;
+  position: relative;
+  color: var(--text-color-default);
+  font-size: var(--h2-font-size);
+}
+
+.navbar .nav-cart .cart-count{
+  padding: 2px 5px;
+  background-color:#4393f4;
+  border-radius: 100%;
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--small-font-size);
+
+  position: absolute;
+  top:-10px;
+  left:24px;
+}
+
+@media screen and (max-width: 768px){
+
+  .navbar .desk-menu {
+    display: none;
+  }
+
+  .navbar .mobi-menu {
+    margin: 0px 5px;    
+    font-size: var(--h2-font-size);
+    display: block;
+  }
+
+  .ballon-menu {
+    width: fit-content;
+    padding: 10px;
+    
+    background-color: rgb(77, 77, 77,.77);
+    align-items: center;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 11%;  
+  }
+
+  .ballon-menu::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 70%;
+   
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent rgba(77, 77, 77,.77) transparent;
+  }
+
+  .ballon-menu.show {
+    visibility: visible;
+  }  
+}
