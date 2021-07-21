@@ -68,7 +68,7 @@
 /*========== BASE ==========*/
 html{
   scroll-behavior: smooth;   
-  background-color: violet;  
+  background-color: rgb(241, 241, 241);  
 }
 
 body {
@@ -79,6 +79,11 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 ul{
   list-style-type: none;
+}
+
+.container {
+  padding: 50px 30px;
 }

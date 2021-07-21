@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Simple calendar width js and bootstrap">
+  <meta name="keywords" content="HTML, CSS, JavaScript, bootstrap, calendar">
+  <meta name="author" content="Wenderson Cirilo">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- font aswesome /-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/resources/imagens/logo.png" type="image/x-icon">
+  
+  <!-- container and navbar css /-->
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  
+  <!-- login css /-->
+  <link rel="stylesheet" href="/css/form-login.css">
+
+  <title> MANGA PLACE</title>
+</head>
+
+<body>
+  <!-- navbar menu -->
+  <nav class="navbar">
+    <!-- brand container /-->
+    <div class="brand-container">
+      <img src="resources/imagens/brand_icon.png" alt="">
+      <span class="brand-text">MANGÁ PLACE</span>
+    </div>
+
+    <!--nav menu /-->
+    <div class="nav-menu">
+      <a href="/index.html" class="nav-link ">
+        <span class="desk-menu">Home</span>
+        <span class="mobi-menu">
+          <i class="fas fa-home"></i>
+        </span>
+      </a>
+
+      <!-- user autentication menu /-->
+      <div class="nav-user-menu">
+        <span class="mobi-menu nav-link" id="btnBallonToggle">
+          <i class="fas fa-user"></i>
+        </span>
+        <!-- drop menu for mobile -->
+        <div class="ballon-menu" id="ballonMenu">
+          <a href="/login.html" class="nav-link active">Entrar</a>
+          <a href="/registrar.html" class="nav-link">Registrar</a>
+        </div>
+      </div>
+      <!-- kart /-->
+      <a href="comprar.html" class="nav-cart nav-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">5</span>
+      </a>
+    </div>
+  </nav>
+  <!-- /navbar menu -->
+  <!-- page container -->
+  <div class="container">
+    <!-- form login -->
+    <div class="login-wrapper">
+      <form  class="login"action="post">
+        <!-- profile /-->
+        <div class="profile-group">
+          <img src="/resources/imagens/anime-icon.jpg" alt="" srcset="">
+          <span class="title">bem vindo !!!</span>
+        </div>
+        <!-- email group /-->
+        <div class="input-group-text">
+          <i class="fas fa-envelope"></i>
+          <input class="input-text input-email" id="email" type="email" name="email" placeholder="Email" required>
+        </div>
+        <!-- password group /-->
+        <div class="input-group-text">
+          <i class="fas fa-lock"></i>
+          <input class="input-text input-password" id="password" type="password" name="password" placeholder="Password"required>
+          <span class="password-show"></span>
+        </div>
+        <!-- Remember me group /-->
+        <div class="checkbox-group">
+          <input class="input-remember-me" type="checkbox" id="remember-me" name="remember-me">
+          <label class="label-remember-me" for="remember-me">Remember me</label>
+        </div>
+        <!-- profile recovery /-->
+        <div class="profile-recover">
+          <a class="login-link" href="">Esqueci minha senha</a>
+        </div>        
+        <!-- button submit and sing-up group /-->
+        <div class="button-group">         
+          <input class="btn-login" type="submit" id="btn-login" name="btn-login">          
+          <a class="login-link" href="/register.html">Criar uma conta</a>
+        </div>        
+      </form>
+    </div>
+    <!-- /form login -->
+  </div>
+  <!-- /page container -->
+  <!-- JS of navbar menu /-->
+  <script src="/js/dropMenu.js"></script>
+</body>
+</html>
